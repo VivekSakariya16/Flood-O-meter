@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Predict the values</title>
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+
+		<form class="form" action="/hd-submit" method="POST">
+			<h2>Flood-o-meter</h2>
+			<p type="Affected-Area" ><input id="a" name="a" placeholder=" Enter area affected"></input></p>
+			<p type="Severity" ><input id="s" name="s" placeholder="Enter severity score (you can obtain it from flood-o-meter)"></input></p>
+            <p type="Month" ><input id="m" name="m" placeholder="Enter month of flood"></input></p>
+			<button type="submit">Submit</button>
+		  </form>
+	
+</body>
+</html>
